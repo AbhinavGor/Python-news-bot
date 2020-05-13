@@ -14,7 +14,7 @@ import {
 // Get posts
 export const getPosts = () => async dispatch => {
   try {
-    const res = await axios.get('/api/posts');
+    const res = await axios.get('/api/subscribe');
 
     dispatch({
       type: GET_POSTS,
@@ -65,7 +65,7 @@ export const removeLike = id => async dispatch => {
 // Delete post
 export const deletePost = id => async dispatch => {
   try {
-    await axios.delete(`/api/posts/${id}`);
+    await axios.delete(`/api/subscribe/${id}`);
 
     dispatch({
       type: DELETE_POST,
@@ -90,7 +90,7 @@ export const addPost = formData => async dispatch => {
   };
 
   try {
-    const res = await axios.post('/api/posts', formData, config);
+    const res = await axios.post('/api/subscribe', formData, config);
 
     dispatch({
       type: ADD_POST,
@@ -109,7 +109,7 @@ export const addPost = formData => async dispatch => {
 // Get post
 export const getPost = id => async dispatch => {
   try {
-    const res = await axios.get(`/api/posts/${id}`);
+    const res = await axios.get(`/api/subscribe/${id}`);
 
     dispatch({
       type: GET_POST,
