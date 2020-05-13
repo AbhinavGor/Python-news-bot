@@ -20,9 +20,9 @@ const Dashboard = ({
       <h2><i className = 'fab fa-connectdevelop'></i> Our Sources</h2>
       <div className='indent1'>
         <ul className='indent1'>
-          <li><a target = '_blank' href='https://www.nytimes.com/'>New York Times</a></li>
-          <li><a target = '_blank' href='https://www.cnet.com/'>CNET</a></li>
-          <li><a target = '_blank' href='https://timesofindia.indiatimes.com/defaultinterstitial.cms'>Times Of India</a></li>
+          <li><a href='https://www.nytimes.com/'>New York Times</a></li>
+          <li><a href='https://www.cnet.com/'>CNET</a></li>
+          <li><a href='https://timesofindia.indiatimes.com/defaultinterstitial.cms'>Times Of India</a></li>
         </ul>
       </div>
       <br />
@@ -34,9 +34,7 @@ const Dashboard = ({
           <li>This news is stored in a database and sent to your registered email every morning at 9 AM.</li>
         </ul>
       </div>
-      <br />
-      <a target = '_blank' href = 'https://github.com/AbhinavGor/Python-news-bot'><button className='btn btn-light'>Contribute to the project here</button></a>
-      <a target = '_blank' href = 'https://abhinavgor.netlify.app/#contact'><button className='btn btn-light dev-btn'>Contact the developer</button></a>
+      {/* <Post /> */}
     </Fragment>
   );
 };

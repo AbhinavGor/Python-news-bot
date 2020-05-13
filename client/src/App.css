@@ -172,9 +172,14 @@ img {
 .badge-light,
 .alert-light {
   background: var(--light-color);
+  font-family: 'Poppins', sans-serif !important;
   color: #333;
 }
 
+.dev-btn{
+  margin-right: 0;
+  margin-left: 40%;
+}
 .btn-dark,
 .bg-dark,
 .badge-dark,
