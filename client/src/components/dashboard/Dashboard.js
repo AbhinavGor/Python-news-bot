@@ -2,7 +2,6 @@ import React, { Fragment, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import Post from '../posts/Posts';
 
 
 const Dashboard = ({
@@ -16,7 +15,7 @@ const Dashboard = ({
     <Fragment>
       
       {/* <h1 className='large text-primary'><i className="fas fa-user" /> Welcome {user && user.name}</h1> */}
-      <h1 className='large'> <img className='round-img' src={user.avatar} alt='' /> {user && user.name}</h1>
+      <h1 className='large'> <img className='round-img' src={user && user.avatar} alt='' /> {user && user.name}</h1>
       <h2><i className = 'fab fa-connectdevelop'></i> Our Sources</h2>
       <div className='indent1'>
         <ul className='indent1'>
@@ -36,7 +35,7 @@ const Dashboard = ({
       </div>
       <br />
       <a target = '_blank' href = 'https://github.com/AbhinavGor/Python-news-bot'><button className='btn btn-light'>Contribute to the project here</button></a>
-      <a target = '_blank' href = 'https://abhinavgor.netlify.app/#contact'><button className='btn btn-light dev-btn'>Contact the developer</button></a>
+      <br /><a target = '_blank' href = 'https://abhinavgor.netlify.app/#contact'><button className='btn btn-light dev-btn'>Contact the developer</button></a>
     </Fragment>
   );
 };
