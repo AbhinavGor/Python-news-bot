@@ -1,7 +1,7 @@
 {
-  "name": "OnlineExamApp",
+  "name": "updat",
   "version": "1.0.0",
-  "description": "A simple online exam app in MERN stack",
+  "description": "Subcription app for a python news bot.",
   "main": "index.js",
   "scripts": {
     "start": "node server",

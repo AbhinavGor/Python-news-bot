@@ -222,6 +222,27 @@ img {
 
 .round-img {
   border-radius: 50%;
+  width: 5%;
+}
+
+.round-img-logo{
+  width: auto;
+}
+
+.indent1{
+  list-style: circle;
+  margin-left: 2%;
+  font-size: 20px;
+}
+
+.indent1 li a {
+  text-emphasis: none;
+  color: inherit;
+  text-decoration: underline !important;
+}
+
+.indent1 li a:hover{
+  color: var(--primary-color);
 }
 
 .line {
