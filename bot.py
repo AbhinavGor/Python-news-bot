@@ -7,7 +7,7 @@ import json
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
-client = MongoClient("mongodb+srv://Abhinav123:Abhinav123@cluster0-i3gyz.mongodb.net/test?retryWrites=true&w=majority")
+client = MongoClient("MONGO_URI")
 
 #SMTP setup
 sender_email_password = input("Enter the password and press enter: \n")
