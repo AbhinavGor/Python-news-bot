@@ -4,21 +4,14 @@ import { connect } from 'react-redux';
 import { addPost } from '../../actions/post';
 import CheckBox from './Checkbox';
 
+
 const PostForm = ({ addPost }) => {
   const [text, setText] = useState('');
-  const [Breaking, setBreaking] = useState('');
-  const catgs = {
-    cats : [
-        {id: 1, value: "banana", isChecked: false},
-        {id: 2, value: "apple", isChecked: false},
-        {id: 3, value: "mango", isChecked: false},
-        {id: 4, value: "grap", isChecked: false}
-    ]
-  }
+  const breaking = {id: 1, value: "Breaking", isChecked: false};
+  const tech = {id: 2, value: "Tech News", isChecked: false};
+  const sports = {id:3, value: "Sports", isChecked:false};
+  const covid = {id:4, value: "COVID", isChecked:false};
 
-  const handleAllChecks = (e) => {
-      console.log(e.target.checked);
-  }
   return (
     <div className='post-form'>
       <h3>Enter the topics you are interested in separated by commas.</h3>
@@ -39,18 +32,16 @@ const PostForm = ({ addPost }) => {
           onChange={e => setText(e.target.value)}
           required
         />
-         <input type="checkbox"  value={Breaking} onChange={e => {console.log(e.target.checked); setBreaking(e.target.checked);}} /> Check / Uncheck All
-        <ul>
-        {
-          catgs.cats.map((cats) => {
-            return (<CheckBox {...cats} />)
-          })
-        }
-        </ul>
+        {/* <CheckBox {...breaking} />
         <br />
+        <CheckBox {...sports} />
+        <br />
+        <CheckBox {...tech} />
+        <br />
+        <CheckBox {...covid} />
+        <br /> */}
         <input type='submit' className='btn btn-light my-1' value='Submit' />
       </form>
-      <h1 >HEllo{Breaking}</h1>
     </div>
   );
 };
